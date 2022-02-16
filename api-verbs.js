@@ -30,7 +30,7 @@ app.post('/api/people', (req, res) => {
     res.status(201).json({success:true,person:name})
 })
 
-app.post('/api/people/postman', (req, res) => {
+app.post('/api/postman/people', (req, res) => {
     const {name} = req.body
     console.log(name);
     if(!name){
